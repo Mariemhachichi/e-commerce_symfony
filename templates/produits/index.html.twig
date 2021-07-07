@@ -10,8 +10,8 @@
             <tr>
                 <th>Id</th>
                 <th>Nom</th>
-                <th>Categorie</th>
                 <th>Prix</th>
+                <th>Images</th>
                 <th>actions</th>
             </tr>
         </thead>
@@ -20,8 +20,8 @@
             <tr>
                 <td>{{ produit.id }}</td>
                 <td>{{ produit.nom }}</td>
-                <td>{{ produit.categorie }}</td>
                 <td>{{ produit.prix }}</td>
+                <td><img src="{{ produit.categorie }}"/></td>
                 <td>
                     <a href="{{ path('produits_show', {'id': produit.id}) }}">show</a>
                     <a href="{{ path('produits_edit', {'id': produit.id}) }}">edit</a>
